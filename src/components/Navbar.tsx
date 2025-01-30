@@ -17,10 +17,10 @@ const Navbar = () => {
   const isActive = (path: string) => location.pathname === path;
 
   return (
-    <nav className="bg-primary text-white fixed w-full z-50 top-0">
+    <nav className="fixed w-full z-50 top-0 bg-gradient-to-r from-primary via-secondary to-primary bg-[length:200%_100%] animate-gradient">
       <div className="container mx-auto px-4">
         <div className="flex justify-between items-center h-16">
-          <Link to="/" className="text-xl font-bold">
+          <Link to="/" className="text-xl font-bold text-white">
             梦笔笙花工作室
           </Link>
 
@@ -30,8 +30,8 @@ const Navbar = () => {
               <Link
                 key={item.path}
                 to={item.path}
-                className={`hover:text-secondary transition-colors ${
-                  isActive(item.path) ? "text-secondary" : ""
+                className={`text-white hover:text-opacity-80 transition-colors ${
+                  isActive(item.path) ? "text-opacity-80 font-bold" : ""
                 }`}
               >
                 {item.name}
@@ -41,7 +41,7 @@ const Navbar = () => {
 
           {/* Mobile Navigation Button */}
           <button
-            className="md:hidden"
+            className="md:hidden text-white"
             onClick={() => setIsOpen(!isOpen)}
             aria-label="Toggle menu"
           >
@@ -56,8 +56,8 @@ const Navbar = () => {
               <Link
                 key={item.path}
                 to={item.path}
-                className={`block py-2 hover:text-secondary transition-colors ${
-                  isActive(item.path) ? "text-secondary" : ""
+                className={`block py-2 text-white hover:text-opacity-80 transition-colors ${
+                  isActive(item.path) ? "text-opacity-80 font-bold" : ""
                 }`}
                 onClick={() => setIsOpen(false)}
               >
