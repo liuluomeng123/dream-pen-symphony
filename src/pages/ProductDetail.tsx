@@ -13,13 +13,13 @@ import {
 const products = [
   {
     id: 1,
-    title: "智能文档处理系统",
-    version: "v1.2.3",
-    uploadDate: "2023-12-01",
-    lastUpdate: "2024-01-15",
-    publisher: "张工",
+    title: "随机抽取器",
+    version: "v1.0",
+    uploadDate: "2023-01-01",
+    lastUpdate: "2023-01-15",
+    publisher: "梦笔笙花工作室",
     previews: [
-      "https://images.unsplash.com/photo-1465146344425-f00d5f5c8f07",
+      "https://github.com/liuluomeng123/dream-pen-symphony/blob/main/images/%E4%BA%A7%E5%93%81%E5%B1%95%E7%A4%BA/%E9%9A%8F%E6%9C%BA%E6%8A%BD%E5%8F%96%E5%99%A8/%E9%9A%8F%E6%9C%BA%E6%8A%BD%E5%8F%96%E5%99%A8%E7%BD%91%E7%AB%99.png",
       "https://images.unsplash.com/photo-1501854140801-50d01698950b",
       "https://images.unsplash.com/photo-1496171367470-9ed9a91ea931",
     ],
