@@ -19,7 +19,7 @@ const Contact = () => {
               <Mail className="text-secondary mt-1" />
               <div>
                 <h3 className="font-bold text-primary mb-2">邮箱</h3>
-                <p className="text-gray-600">contact@mengbishenghua.com</p>
+                <p className="text-gray-600">mengbishenghua2025@163.com</p>
               </div>
             </div>
             <div className="flex items-start space-x-4">
@@ -32,7 +32,7 @@ const Contact = () => {
           </div>
           <div className="flex justify-center items-center animate-fade-up">
             <div className="w-48 h-48 bg-primary/10 rounded-full flex items-center justify-center">
-              <span className="text-2xl font-bold text-primary">梦笔笙花</span>
+              <span className="text-2xl font-bold text-primary">联系我们</span>
             </div>
           </div>
         </div>

@@ -9,7 +9,7 @@ const Index = () => {
             梦笔笙花工作室
           </h1>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-            传承匠心精神，创造艺术价值
+            我们的口号
           </p>
         </section>
 
@@ -17,13 +17,13 @@ const Index = () => {
           <div className="bg-gray-100 p-8 rounded-lg animate-fade-up">
             <h2 className="text-2xl font-bold text-primary mb-4">我们的特色</h2>
             <p className="text-gray-600">
-              专注于传统工艺与现代设计的完美融合，为您带来独特的艺术体验。
+              游戏与网络，我们不仅创作工具，还在互联网上帮助他人。
             </p>
           </div>
           <div className="bg-gray-100 p-8 rounded-lg animate-fade-up" style={{ animationDelay: "0.2s" }}>
-            <h2 className="text-2xl font-bold text-primary mb-4">匠心制作</h2>
+            <h2 className="text-2xl font-bold text-primary mb-4">努力尝试</h2>
             <p className="text-gray-600">
-              每一件作品都凝聚着我们的匠心与创意，展现非凡品质。
+              每一件作品都凝聚着我们的努力与创意，期待能够帮助到您。
             </p>
           </div>
         </section>
