@@ -17,7 +17,7 @@ const Navbar = () => {
   const isActive = (path: string) => location.pathname === path;
 
   return (
-    <nav className="fixed w-full z-50 top-0 bg-gradient-to-r from-primary via-secondary to-primary bg-[length:200%_100%] animate-gradient">
+    <nav className="fixed w-full z-50 top-0 bg-gradient-to-r from-primary to-secondary">
       <div className="container mx-auto px-4">
         <div className="flex justify-between items-center h-16">
           <Link to="/" className="text-xl font-bold text-white">

@@ -32,7 +32,6 @@ export default {
       animation: {
         "fade-up": "fadeUp 0.5s ease-out forwards",
         "fade-down": "fadeDown 0.5s ease-out forwards",
-        "gradient": "gradient 3s ease infinite",
       },
       keyframes: {
         fadeUp: {
@@ -42,10 +41,6 @@ export default {
         fadeDown: {
           "0%": { opacity: "0", transform: "translateY(-20px)" },
           "100%": { opacity: "1", transform: "translateY(0)" },
-        },
-        gradient: {
-          "0%, 100%": { backgroundPosition: "0% 50%" },
-          "50%": { backgroundPosition: "100% 50%" },
         },
       },
     },
