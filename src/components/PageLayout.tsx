@@ -1,11 +1,17 @@
-import { ReactNode } from "react";
+import React from "react";
 import Navbar from "./Navbar";
+import Footer from "./Footer";
 
-const PageLayout = ({ children }: { children: ReactNode }) => {
+interface PageLayoutProps {
+  children: React.ReactNode;
+}
+
+const PageLayout = ({ children }: PageLayoutProps) => {
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen flex flex-col">
       <Navbar />
-      <main className="pt-16">{children}</main>
+      <main className="flex-grow mt-16">{children}</main>
+      <Footer />
     </div>
   );
 };
