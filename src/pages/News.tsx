@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import PageLayout from "@/components/PageLayout";
 
 const news = [
@@ -22,15 +23,22 @@ const News = () => {
         <h1 className="text-4xl font-bold text-primary mb-8 animate-fade-up">新闻动态</h1>
         <div className="space-y-6">
           {news.map((item, index) => (
-            <div
+            <Link
               key={item.id}
-              className="bg-white rounded-lg shadow-lg p-6 animate-fade-up"
-              style={{ animationDelay: `${index * 0.2}s` }}
+              to={`/news/${item.id}`}
+              className="block"
             >
-              <h2 className="text-2xl font-bold text-primary mb-2">{item.title}</h2>
-              <p className="text-gray-500 text-sm mb-4">{item.date}</p>
-              <p className="text-gray-600">{item.content}</p>
-            </div>
+              <div
+                className="bg-white rounded-lg shadow-lg p-6 animate-fade-up hover:shadow-xl transition-all duration-300 hover:scale-[1.02] cursor-pointer group"
+                style={{ animationDelay: `${index * 0.2}s` }}
+              >
+                <h2 className="text-2xl font-bold text-primary mb-2 group-hover:text-secondary transition-colors">
+                  {item.title}
+                </h2>
+                <p className="text-gray-500 text-sm mb-4">{item.date}</p>
+                <p className="text-gray-600">{item.content}</p>
+              </div>
+            </Link>
           ))}
         </div>
       </div>
