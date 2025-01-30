@@ -19,7 +19,7 @@ const products = [
     lastUpdate: "2023-01-15",
     publisher: "梦笔笙花工作室",
     previews: [
-      "https://github.com/liuluomeng123/dream-pen-symphony/blob/main/images/%E4%BA%A7%E5%93%81%E5%B1%95%E7%A4%BA/%E9%9A%8F%E6%9C%BA%E6%8A%BD%E5%8F%96%E5%99%A8/%E9%9A%8F%E6%9C%BA%E6%8A%BD%E5%8F%96%E5%99%A8%E7%BD%91%E7%AB%99.png",
+      "https://github.com/liuluomeng123/dream-pen-symphony/images/产品展示/随机抽取器",
       "https://images.unsplash.com/photo-1501854140801-50d01698950b",
       "https://images.unsplash.com/photo-1496171367470-9ed9a91ea931",
     ],
