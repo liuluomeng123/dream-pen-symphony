@@ -19,10 +19,13 @@ const Navbar = () => {
   const isActive = (path: string) => location.pathname === path;
 
   return (
-    <nav className="fixed w-full z-50 top-0 bg-gradient-to-r from-primary to-secondary">
+    <nav className="fixed w-full z-50 top-0 bg-gradient-to-r from-primary to-secondary shadow-lg">
       <div className="container mx-auto px-4">
         <div className="flex justify-between items-center h-16">
-          <Link to="/" className="text-xl font-bold text-white">
+          <Link 
+            to="/" 
+            className="text-xl font-bold text-white hover:scale-105 transition-transform duration-300"
+          >
             梦笔笙花工作室
           </Link>
 
@@ -32,9 +35,12 @@ const Navbar = () => {
               <Link
                 key={item.path}
                 to={item.path}
-                className={`text-white hover:text-opacity-80 transition-colors ${
-                  isActive(item.path) ? "text-opacity-80 font-bold" : ""
-                }`}
+                className={`relative text-white px-3 py-2 rounded-md transition-all duration-300
+                  hover:bg-white/10 hover:scale-105
+                  ${isActive(item.path) 
+                    ? "bg-white/20 font-bold shadow-lg after:absolute after:bottom-0 after:left-0 after:w-full after:h-0.5 after:bg-white" 
+                    : "hover:text-opacity-80"
+                  }`}
               >
                 {item.name}
               </Link>
@@ -43,7 +49,7 @@ const Navbar = () => {
 
           {/* Mobile Navigation Button */}
           <button
-            className="md:hidden text-white"
+            className="md:hidden text-white hover:bg-white/10 p-2 rounded-md transition-colors duration-300"
             onClick={() => setIsOpen(!isOpen)}
             aria-label="Toggle menu"
           >
@@ -58,9 +64,12 @@ const Navbar = () => {
               <Link
                 key={item.path}
                 to={item.path}
-                className={`block py-2 text-white hover:text-opacity-80 transition-colors ${
-                  isActive(item.path) ? "text-opacity-80 font-bold" : ""
-                }`}
+                className={`block py-2 px-4 text-white rounded-md transition-all duration-300
+                  hover:bg-white/10 hover:translate-x-2
+                  ${isActive(item.path) 
+                    ? "bg-white/20 font-bold" 
+                    : "hover:text-opacity-80"
+                  }`}
                 onClick={() => setIsOpen(false)}
               >
                 {item.name}
