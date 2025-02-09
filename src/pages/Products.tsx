@@ -1,3 +1,4 @@
+
 import { Link } from "react-router-dom";
 import PageLayout from "@/components/PageLayout";
 import { Card, CardContent } from "@/components/ui/card";
@@ -5,23 +6,23 @@ import { Card, CardContent } from "@/components/ui/card";
 const products = [
   {
     id: 1,
-    title: "智能文档处理系统",
-    version: "v1.2.3",
-    uploadDate: "2023-12-01",
-    lastUpdate: "2024-01-15",
-    publisher: "张工",
-    preview: "https://images.unsplash.com/photo-1465146344425-f00d5f5c8f07",
-    description: "智能化文档处理解决方案",
+    title: "随机抽取器",
+    version: "v1.0",
+    uploadDate: "2023-01-01",
+    lastUpdate: "2023-01-15",
+    publisher: "梦笔笙花工作室",
+    preview: "/images/产品展示/随机抽取器/随机抽取器网站.png",
+    description: "智能文档处理系统是一款革新性的文档管理解决方案，致力于提升企业文档处理效率。",
   },
   {
     id: 2,
-    title: "数据分析平台",
+    title: "迷你彩码通",
     version: "v2.0.1",
-    uploadDate: "2023-11-15",
+    uploadDate: "2023-11-15", 
     lastUpdate: "2024-01-10",
-    publisher: "李工",
-    preview: "https://images.unsplash.com/photo-1501854140801-50d01698950b",
-    description: "企业级数据分析平台",
+    publisher: "梦笔笙花工作室",
+    preview: "/images/产品展示/迷你彩码通/迷你彩码通首页.png",
+    description: "为迷你世界玩家提供便捷的彩色文字代码转换工具",
   },
 ];
 

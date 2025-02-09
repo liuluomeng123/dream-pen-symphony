@@ -1,3 +1,4 @@
+
 import { useParams, useNavigate } from "react-router-dom";
 import { ArrowLeft } from "lucide-react";
 import PageLayout from "@/components/PageLayout";
@@ -19,29 +20,28 @@ const products = [
     lastUpdate: "2023-01-15",
     publisher: "梦笔笙花工作室",
     previews: [
-      "https://github.com/liuluomeng123/dream-pen-symphony/images/产品展示/随机抽取器/随机抽取器网站.png",
-      "https://images.unsplash.com/photo-1501854140801-50d01698950b",
-      "https://images.unsplash.com/photo-1496171367470-9ed9a91ea931",
+      "/images/产品展示/随机抽取器/随机抽取器网站.png",
+      "/images/产品展示/随机抽取器/随机抽取器网站-抽取中.png",
+      "/images/产品展示/随机抽取器/随机抽取器网站-批量添加页面.png",
     ],
-    introduction: "智能文档处理系统是一款革新性的文档管理解决方案，致力于提升企业文档处理效率。",
-    details: "本系统采用先进的AI技术，支持多种文档格式的智能识别和处理，具备自动分类、信息提取、内容分析等功能。系统界面简洁直观，操作便捷，是企业提升文档管理效率的得力助手。",
-    downloadUrl: "/downloads/document-processor.zip"
+    introduction: "一款便捷的随机抽取工具，支持多种抽取模式和批量导入名单。",
+    details: "本系统提供简单抽取和批量抽取两种模式，支持Excel导入名单，可以设置不重复抽取等功能。系统界面简洁直观，操作便捷，适用于各类抽奖、随机点名等场景。",
+    downloadUrl: "/downloads/random-selector.zip"
   },
   {
     id: 2,
-    title: "数据分析平台",
+    title: "迷你彩码通",
     version: "v2.0.1",
     uploadDate: "2023-11-15",
     lastUpdate: "2024-01-10",
-    publisher: "李工",
+    publisher: "梦笔笙花工作室",
     previews: [
-      "https://images.unsplash.com/photo-1501854140801-50d01698950b",
-      "https://images.unsplash.com/photo-1465146344425-f00d5f5c8f07",
-      "https://images.unsplash.com/photo-1496171367470-9ed9a91ea931",
+      "/images/产品展示/迷你彩码通/迷你彩码通首页.png",
+      "/images/产品展示/迷你彩码通/迷你彩码通使用.png"
     ],
-    introduction: "数据分析平台是一个综合性的数据处理和分析工具，为企业提供全方位的数据洞察。",
-    details: "平台整合了多种数据分析工具和可视化组件，支持实时数据处理、多维度分析、智能报表生成等功能。通过直观的界面展示，帮助用户快速理解和利用数据价值。",
-    downloadUrl: "/downloads/data-analytics.zip"
+    introduction: "为迷你世界玩家提供便捷的彩色文字代码转换工具",
+    details: "迷你彩码通是一款专为迷你世界玩家设计的工具，可以快速将RGB等色彩代号转换为迷你世界可用的彩色文字代码。支持调色盘直接选色，界面简洁易用。",
+    downloadUrl: "/downloads/mini-color-code.zip"
   },
 ];
 
