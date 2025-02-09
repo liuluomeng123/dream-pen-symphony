@@ -10,6 +10,7 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel";
+import ImageViewer from "@/components/ImageViewer";
 
 const products = [
   {
@@ -100,7 +101,7 @@ const ProductDetail = () => {
               <CarouselContent>
                 {product.previews.map((preview, index) => (
                   <CarouselItem key={index}>
-                    <img
+                    <ImageViewer
                       src={preview}
                       alt={`${product.title} 预览图 ${index + 1}`}
                       className="w-full h-[400px] object-cover rounded-lg"

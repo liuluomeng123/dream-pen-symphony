@@ -2,6 +2,7 @@
 import { Link } from "react-router-dom";
 import PageLayout from "@/components/PageLayout";
 import { Card, CardContent } from "@/components/ui/card";
+import ImageViewer from "@/components/ImageViewer";
 
 const products = [
   {
@@ -39,7 +40,7 @@ const Products = () => {
               style={{ animationDelay: `${index * 0.2}s` }}
             >
               <CardContent className="p-0">
-                <img
+                <ImageViewer
                   src={product.preview}
                   alt={product.title}
                   className="w-full h-48 object-cover"
