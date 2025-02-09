@@ -1,3 +1,4 @@
+
 import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Menu, X } from "lucide-react";
@@ -11,6 +12,7 @@ const Navbar = () => {
     { name: "关于我们", path: "/about" },
     { name: "产品展示", path: "/products" },
     { name: "新闻动态", path: "/news" },
+    { name: "团队成员", path: "/members" },
     { name: "联系我们", path: "/contact" },
   ];
 
