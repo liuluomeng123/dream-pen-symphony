@@ -4,9 +4,8 @@ import react from "@vitejs/plugin-react-swc";
 import path from "path";
 import { componentTagger } from "lovable-tagger";
 
-// https://vitejs.dev/config/
 export default defineConfig(({ mode }) => ({
-  base: "./", // 这里添加了 base 配置
+  base: "/dream-pen-symphony/", // 修改为您的仓库名称
   server: {
     host: "::",
     port: 8080,
