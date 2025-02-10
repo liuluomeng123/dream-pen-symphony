@@ -5,7 +5,7 @@ import path from "path";
 import { componentTagger } from "lovable-tagger";
 
 export default defineConfig(({ mode }) => ({
-  base: "/dream-pen-symphony/", // 修改为您的仓库名称
+  base: "/dream-pen-symphony/",
   server: {
     host: "::",
     port: 8080,
